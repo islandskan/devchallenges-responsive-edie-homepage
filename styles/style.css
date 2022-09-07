@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.wrapper {
+    width: 92%;
+    margin: auto;
+}
+
+footer {
+    background-color: #100e1d;
+    color: white;
+    padding: 36px 44px 24px 44px;
+}
+
+footer a {
+    color: white;
+}
