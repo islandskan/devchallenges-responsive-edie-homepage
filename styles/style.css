@@ -40,7 +40,7 @@ section {
     margin-bottom: 100px;
 }
 
-section:not(.hero) {
+section:not(.hero, .footer__menu, .footer__social, .footer__txt) {
     border: 1px solid blue;
 }
 
@@ -229,9 +229,46 @@ form button {
         color: white;
     }
 
+    .footer__menu,
+    .footer__social {
+        align-items: flex-start;
+    }
+
+    .footer__menu {
+        margin-bottom: 64px;
+    }
+
+    .footer__menu ul {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .footer__logo {
+        margin-bottom: 8px;
+    }
+
+    .footer__social {
+        margin-bottom: 65px;
+    }
+
+    .footer__social--icons {
+        max-width: 94px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__social--icons a i {
+        font-size: 26px;
+    }
+
     .footer__txt {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
+        margin-bottom: 0;
+        height: 152px;
+        justify-content: flex-end;
     }
 
     .footer__txt--link {
@@ -239,7 +276,7 @@ form button {
     }
 
     .footer__logo {
-        font-size: 2rem;
+        font-size: 36px;
     }
 }
 
