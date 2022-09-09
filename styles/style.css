@@ -37,6 +37,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 section:not(.hero) {
@@ -164,8 +165,7 @@ form button {
     /* HERO SECTION */
 
     .hero {
-        margin-bottom: 100px;
-        padding-bottom: ;
+        padding-bottom: 25px;
     }
 
     .hero img {
