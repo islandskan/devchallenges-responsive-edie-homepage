@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +12,15 @@ ul {
 
 a {
     text-decoration: none;
+    color: #333333;
 }
 
 body {
     width: 100%;
     max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    background-color: #fff;
 }
 
 .wrapper {
@@ -22,12 +28,279 @@ body {
     margin: auto;
 }
 
-footer {
-    background-color: #100e1d;
-    color: white;
-    padding: 36px 44px 24px 44px;
+img {
+    max-width: 100%;
+    border-radius: 24px;
 }
 
-footer a {
-    color: white;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:not(.hero) {
+    border: 1px solid blue;
+}
+
+input,
+button {
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+form label {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+input {
+    height: 50px;
+    padding: 15px 100px 6px 19px;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #bdbdbd;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+
+form button {
+    height: 39px;
+    background-color: #2d9cdb;
+    color: #fff;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 71px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    bottom: 4px;
+    right: 4px;
+}
+
+@media screen and (min-width: 320px) {
+    /* HEADER AND NAVIGATION SECTION */
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        margin: 13px 10px 16px 10px;
+        position: relative;
+    }
+
+    .logo {
+        font-family: 'Heebo', sans-serif;
+    }
+
+    .logo a h1 {
+        font-size: 24px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px 10px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.4s ease;
+    }
+
+    .open {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .burger {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        z-index: 9;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #333333;
+        border-radius: 16px;
+    }
+
+    .nav li a {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        margin-bottom: 100px;
+        padding-bottom: ;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: 145px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+    .hero__headline {
+        font-weight: 500;
+        max-width: 275px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero__headline p {
+        color: #2d9cdb;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .hero__headline h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .hero__txt {
+        max-width: 270px;
+        width: 100%;
+        margin-top: 22px;
+        margin-bottom: 31px;
+    }
+
+    .hero__txt h3 {
+        font-size: 24px;
+        max-width: 227px;
+        font-weight: 500;
+        line-height: 36px;
+        margin-bottom: 33px;
+    }
+
+    .hero__txt p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* SERVICES SECTION */
+
+    /* TEAM SECTION */
+
+    /* FOOTER SECTION */
+
+    footer {
+        background-color: #100e1d;
+        color: white;
+        padding: 36px 44px 24px 44px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    .footer__txt {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+
+    .footer__txt--link {
+        font-weight: 700;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+    }
+}
+
+/* ------------------ */
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        position: static;
+        height: fit-content;
+        width: 80%;
+        opacity: 1;
+        padding: 0;
+        justify-content: flex-end;
+        transform: translateX(0);
+    }
+
+    .nav li a {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo a h1 {
+        font-size: 36px;
+    }
+    .nav {
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .nav li a {
+        margin-left: 0;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav {
+        width: 50%;
+    }
+
+    .nav li a {
+        font-size: 24px;
+    }
 }
