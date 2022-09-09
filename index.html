@@ -15,34 +15,32 @@
             type="image/x-icon"
             href="https://devchallenges.io/"
         />
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
         <link rel="stylesheet" href="./styles/style.css" />
-
+        <script src="./script/script.js" defer></script>
         <title>Devchallenges - Edie Homepage</title>
     </head>
     <body>
+        <!-- Header and menu -->
         <div class="wrapper">
-            <!-- Header and menu -->
             <header>
                 <div class="logo">
                     <a href="#">
                         <h1>Edie</h1>
                     </a>
                 </div>
-                <button class="nav-btn" id="burger">Menu</button>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Our Works</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Works</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </header>
             <!-- Hero section -->
             <section class="hero">
@@ -57,12 +55,17 @@
                         We help transform your ideas into real world
                         applications that will outperform your toughest
                         competition and help you achieve your strategic goals in
-                        short period of time
+                        short period of time.
                     </p>
                 </div>
                 <form>
                     <label for="email"> Want us to contact you? </label>
-                    <input type="email" name="email" id="email" />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                    />
                     <button type="submit">Join</button>
                 </form>
             </section>
@@ -184,7 +187,7 @@
                 </ul>
             </section>
             <section class="footer__social">
-                <div class="footer__logo">
+                <div class="footer__logo logo">
                     <h6>Edie</h6>
                 </div>
                 <div class="footer__social--icons">
