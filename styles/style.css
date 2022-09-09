@@ -17,7 +17,6 @@ a {
 
 body {
     width: 100%;
-    max-width: 1440px;
     font-family: 'Poppins', sans-serif;
     color: #333333;
     background-color: #fff;
@@ -25,6 +24,7 @@ body {
 
 .wrapper {
     width: 92%;
+    border: 1px solid red;
     margin: auto;
 }
 
@@ -38,10 +38,6 @@ section {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-}
-
-section:not(.hero, .footer__menu, .footer__social, .footer__txt) {
-    border: 1px solid blue;
 }
 
 input,
@@ -215,6 +211,18 @@ form button {
 
     /* SERVICES SECTION */
 
+    .services {
+        border: 1px solid blue;
+    }
+
+    .services__headline {
+        border: 1px solid red;
+    }
+
+    .services__card {
+        border: 1px solid black;
+    }
+
     /* TEAM SECTION */
 
     /* FOOTER SECTION */
@@ -222,7 +230,11 @@ form button {
     footer {
         background-color: #100e1d;
         color: white;
-        padding: 36px 44px 24px 44px;
+        padding: 36px 0 24px 0;
+    }
+    .footer__wrapper {
+        width: 92%;
+        margin: auto;
     }
 
     footer a {
