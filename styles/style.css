@@ -178,6 +178,7 @@ ul li a:hover {
     .open {
         opacity: 1;
         transform: translateX(0);
+        z-index: 5;
     }
 
     .burger {
