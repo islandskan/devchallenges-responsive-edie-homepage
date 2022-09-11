@@ -186,6 +186,7 @@ ul li a:hover {
         position: absolute;
         right: 0;
         z-index: 9;
+        background-color: transparent;
     }
 
     .line {
