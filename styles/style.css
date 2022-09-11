@@ -13,6 +13,7 @@ ul {
 a {
     text-decoration: none;
     color: #333333;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -97,6 +98,15 @@ form button {
     letter-spacing: 0.9px;
     bottom: 4px;
     right: 4px;
+}
+
+ul li a {
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:focus,
+ul li a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 320px) {
@@ -320,6 +330,12 @@ form button {
         font-weight: 500;
         margin-top: 35px;
         align-self: flex-start;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .projects a:hover,
+    .projects a:focus {
+        text-decoration: underline;
     }
 
     .projects a i {
@@ -361,14 +377,6 @@ form button {
         align-self: flex-start;
     }
 
-    .team__headline--intro {
-        color: #eb5757;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.8;
-        margin-bottom: 7px;
-    }
-
     .team__headline h4 {
         font-size: 36px;
         font-weight: 500;
@@ -376,13 +384,21 @@ form button {
         margin-bottom: 14px;
     }
 
-    .team__headline p {
+    .team__headline + p {
         max-width: 273px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #4f4f4f;
         margin-bottom: 36px;
+    }
+
+    .team__intro {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 7px;
+        color: #eb5757;
     }
 
     .team__container {
@@ -455,6 +471,12 @@ form button {
 
     footer a {
         color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover,
+    footer a:focus {
+        color: #2d9cdb;
     }
 
     .footer__menu,
@@ -489,6 +511,12 @@ form button {
 
     .footer__social--icons a i {
         font-size: 26px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer__social--icons a i:hover,
+    .footer__social--icons a i:focus {
+        color: #2d9cdb;
     }
 
     .footer__txt {
@@ -501,6 +529,12 @@ form button {
 
     .footer__txt--link {
         font-weight: 700;
+    }
+
+    .footer__txt--link:focus,
+    .footer__txt--link:hover {
+        text-decoration: underline;
+        color: #2d9cdb;
     }
 
     .footer__logo {
