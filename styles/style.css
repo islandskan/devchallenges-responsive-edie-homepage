@@ -44,6 +44,7 @@ input,
 button {
     border-radius: 12px;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 button {
@@ -232,12 +233,23 @@ form button {
     }
 
     .services__card {
-        border: 1px solid #828282;
         max-width: 341px;
         width: 100%;
         padding: 49px 34px 30px 34px;
         margin-bottom: 30px;
         border-radius: 24px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .services__card:focus,
+    .services__card:hover {
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    }
+
+    .services__card:focus > button,
+    .services__card:hover > button {
+        color: #ffffff;
+        background-color: #2d9cdb;
     }
 
     .services__card h5 {
@@ -267,6 +279,11 @@ form button {
         color: #828282;
         font-weight: 500;
         font-size: 16px;
+    }
+
+    .services__card button:focus,
+    .services__card button:hover {
+        box-shadow: 0px 8px 10px rgba(51, 51, 51, 0.2);
     }
 
     .card__icon {
@@ -405,7 +422,6 @@ form button {
 
     .team__testimonial--customer {
         margin-top: 31px;
-        border: 1px solid red;
         display: flex;
     }
 
