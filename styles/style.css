@@ -26,7 +26,6 @@ body {
 
 .wrapper {
     width: 92%;
-    border: 1px solid red;
     margin: auto;
 }
 
@@ -901,5 +900,21 @@ ul li a:hover {
 
     .nav li a {
         font-size: 24px;
+    }
+
+    .hero__headline h2 {
+        font-size: 48px;
+        line-height: 72px;
+        width: 550px;
+    }
+
+    .hero__txt {
+        max-width: 400px;
+    }
+
+    .hero__txt h3 {
+        font-size: 48px;
+        line-height: 72px;
+        max-width: 100%;
     }
 }
