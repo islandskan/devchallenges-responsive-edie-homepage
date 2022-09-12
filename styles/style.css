@@ -1,9 +1,9 @@
 /* GLOBAL STYLES */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap');
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 ul {
@@ -11,33 +11,33 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: #333333;
-    transition: all 0.3s ease-in-out;
     border-radius: 8px;
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    color: #333333;
     background-color: #fff;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 .wrapper {
-    width: 92%;
     margin: auto;
+    width: 92%;
 }
 
 img {
-    max-width: 100%;
     border-radius: 24px;
+    max-width: 100%;
 }
 
 section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 100px;
 }
 
@@ -66,43 +66,43 @@ a:focus {
 }
 
 button {
-    padding: 10px 13px;
     cursor: pointer;
+    padding: 10px 13px;
     text-align: center;
 }
 
 form {
-    position: relative;
     display: flex;
     flex-direction: column;
     font-weight: 500;
     margin: 10px 0;
+    position: relative;
 }
 
 form label {
+    color: #828282;
     font-size: 10px;
     line-height: 1.6;
     margin-bottom: 5px;
-    color: #828282;
 }
 
 input {
-    height: 50px;
-    padding: 15px 100px 6px 19px;
-    width: 100%;
     background-color: #f2f2f2;
     color: #bdbdbd;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 50px;
+    line-height: 22px;
+    padding: 15px 100px 6px 19px;
+    width: 100%;
 }
 
 input:hover,
 input:focus {
-    outline: 3px solid #2d9cdb;
     background-color: #fff;
     color: #333333;
+    outline: 3px solid #2d9cdb;
 }
 
 input::placeholder-shown {
@@ -110,18 +110,18 @@ input::placeholder-shown {
 }
 
 form button {
-    height: 39px;
     background-color: #2d9cdb;
+    bottom: 4px;
     color: #fff;
-    position: absolute;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    width: 71px;
-    line-height: 22px;
     font-weight: 500;
+    height: 39px;
     letter-spacing: 0.9px;
-    bottom: 4px;
+    line-height: 22px;
+    position: absolute;
     right: 4px;
+    width: 71px;
 }
 
 form button:hover,
@@ -142,8 +142,8 @@ ul li a:hover {
     /* HEADER AND NAVIGATION SECTION */
 
     header {
-        height: 80px;
         display: flex;
+        height: 80px;
         justify-content: space-between;
         margin: 13px 10px 16px 10px;
         position: relative;
@@ -158,20 +158,20 @@ ul li a:hover {
     }
 
     .nav {
+        align-items: center;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
-        width: 100%;
-        background-color: #fff;
-        align-items: center;
         justify-content: space-around;
-        padding: 40px 10px;
+        left: 0;
         opacity: 0;
+        padding: 40px 10px;
+        position: fixed;
+        top: 0;
         transform: translateX(100%);
         transition: all 0.4s ease;
+        width: 100%;
     }
 
     .open {
@@ -181,24 +181,24 @@ ul li a:hover {
     }
 
     .burger {
+        background-color: transparent;
         cursor: pointer;
         position: absolute;
         right: 0;
         z-index: 9;
-        background-color: transparent;
     }
 
     .line {
-        width: 30px;
-        height: 3px;
-        margin: 5px;
         background-color: #333333;
         border-radius: 16px;
+        height: 3px;
+        margin: 5px;
+        width: 30px;
     }
 
     .nav li a {
-        font-weight: 500;
         font-size: 30px;
+        font-weight: 500;
     }
 
     /* HERO SECTION */
@@ -208,17 +208,17 @@ ul li a:hover {
     }
 
     .hero img {
-        max-width: 100%;
-        height: 145px;
-        object-fit: cover;
         border-radius: 18px;
+        height: 145px;
+        max-width: 100%;
+        object-fit: cover;
     }
 
     .hero__headline {
         font-weight: 500;
+        margin-bottom: 15px;
         max-width: 275px;
         width: 100%;
-        margin-bottom: 15px;
     }
 
     .hero__headline p {
@@ -233,18 +233,18 @@ ul li a:hover {
     }
 
     .hero__txt {
+        margin-bottom: 31px;
+        margin-top: 22px;
         max-width: 270px;
         width: 100%;
-        margin-top: 22px;
-        margin-bottom: 31px;
     }
 
     .hero__txt h3 {
         font-size: 24px;
-        max-width: 227px;
         font-weight: 500;
         line-height: 36px;
         margin-bottom: 33px;
+        max-width: 227px;
     }
 
     .hero__txt p {
@@ -260,26 +260,26 @@ ul li a:hover {
 
     .services__headline {
         font-weight: 500;
+        height: 164px;
         max-width: 275px;
         width: 100%;
-        height: 164px;
     }
 
     .services__headline h4 {
         font-size: 24px;
-        max-width: 227px;
         font-weight: 500;
         line-height: 36px;
         margin-bottom: 33px;
+        max-width: 227px;
     }
 
     .services__card {
-        max-width: 341px;
-        width: 100%;
-        padding: 49px 34px 30px 34px;
-        margin-bottom: 30px;
         border-radius: 24px;
+        margin-bottom: 30px;
+        max-width: 341px;
+        padding: 49px 34px 30px 34px;
         transition: all 0.4s ease-in-out;
+        width: 100%;
     }
 
     .services__card:focus,
@@ -291,46 +291,46 @@ ul li a:hover {
     .services__card:focus > button,
     .services__card:hover > button,
     .services__card:focus-within > button {
-        color: #ffffff;
         background-color: #2d9cdb;
+        color: #ffffff;
     }
 
     .services__card h5 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 36px;
         color: #333333;
-        margin-top: 35px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
         margin-bottom: 24px;
+        margin-top: 35px;
     }
 
     .services__card p {
-        max-width: 273px;
-        font-weight: 400;
-        font-size: 16px;
         color: #4f4f4f;
+        font-size: 16px;
+        font-weight: 400;
         line-height: 24px;
         margin-bottom: 30px;
+        max-width: 273px;
     }
 
     .services__card button {
-        width: 120px;
-        height: 42px;
-        padding: 9px 12px;
-        font-family: 'Poppins', sans-serif;
         background-color: #e0e0e0;
         color: #828282;
-        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;
+        font-weight: 500;
+        height: 42px;
+        padding: 9px 12px;
+        width: 120px;
     }
 
     .card__icon {
-        width: 67px;
-        height: 67px;
+        align-items: center;
         border-radius: 16px;
         display: flex;
+        height: 67px;
         justify-content: center;
-        align-items: center;
+        width: 67px;
     }
 
     .design {
@@ -353,11 +353,11 @@ ul li a:hover {
     /* PROJECTS SECTION */
 
     .projects a {
+        align-self: flex-start;
         color: #2d9cdb;
         font-size: 18px;
         font-weight: 500;
         margin-top: 35px;
-        align-self: flex-start;
         transition: all 0.3s ease-in-out;
     }
 
@@ -372,10 +372,10 @@ ul li a:hover {
 
     .projects__headline h4 {
         font-size: 24px;
-        max-width: 267px;
         font-weight: 500;
         line-height: 36px;
         margin-bottom: 36px;
+        max-width: 267px;
     }
 
     .projects__card {
@@ -387,8 +387,8 @@ ul li a:hover {
     }
 
     .projects__card--txt p {
-        font-weight: 300;
         font-size: 12px;
+        font-weight: 300;
         line-height: 1.8;
     }
 
@@ -401,8 +401,8 @@ ul li a:hover {
     /* TEAM SECTION */
 
     .team__headline {
-        max-width: 280px;
         align-self: flex-start;
+        max-width: 280px;
     }
 
     .team__headline h4 {
@@ -413,30 +413,30 @@ ul li a:hover {
     }
 
     .team__headline + p {
-        max-width: 273px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
         color: #4f4f4f;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
         margin-bottom: 36px;
+        max-width: 273px;
     }
 
     .team__intro {
-        font-weight: 500;
+        color: #eb5757;
         font-size: 18px;
+        font-weight: 500;
         line-height: 1.8;
         margin-bottom: 7px;
-        color: #eb5757;
     }
 
     .team__container {
+        column-gap: 9px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 9px;
-        row-gap: 9px;
         grid-template-rows: repeat(4, 1fr);
         margin-bottom: 50px;
         padding-bottom: 50px;
+        row-gap: 9px;
     }
 
     .team__container img:first-child {
@@ -456,22 +456,19 @@ ul li a:hover {
 
     .team__testimonial {
         font-size: 24px;
-        line-height: 1.7;
         font-weight: 500;
-    }
-
-    .team__testimonial q {
-        width: fit-content;
+        line-height: 1.7;
+        width: 351px;
     }
 
     .team__testimonial--customer {
-        margin-top: 31px;
         display: flex;
+        margin-top: 31px;
     }
 
     .team__testimonial--customer img {
-        max-width: 82px;
         margin-right: 30px;
+        max-width: 82px;
     }
 
     .testimonial-title h5 {
@@ -480,9 +477,9 @@ ul li a:hover {
     }
 
     .testimonial-title p {
+        color: #828282;
         font-size: 18px;
         line-height: 27px;
-        color: #828282;
     }
 
     /* FOOTER SECTION */
@@ -493,8 +490,8 @@ ul li a:hover {
         padding: 36px 0 24px 0;
     }
     .footer__wrapper {
-        width: 92%;
         margin: auto;
+        width: 92%;
     }
 
     footer a {
@@ -517,8 +514,8 @@ ul li a:hover {
     }
 
     .footer__menu ul {
-        font-weight: 400;
         font-size: 18px;
+        font-weight: 400;
         line-height: 36px;
     }
 
@@ -531,10 +528,10 @@ ul li a:hover {
     }
 
     .footer__social--icons {
-        max-width: 94px;
-        width: 100%;
         display: flex;
         justify-content: space-between;
+        max-width: 94px;
+        width: 100%;
     }
 
     .footer__social--icons a i {
@@ -550,9 +547,9 @@ ul li a:hover {
     .footer__txt {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        margin-bottom: 0;
         height: 152px;
         justify-content: flex-end;
+        margin-bottom: 0;
     }
 
     .footer__txt--link {
@@ -561,8 +558,8 @@ ul li a:hover {
 
     .footer__txt--link:focus,
     .footer__txt--link:hover {
-        text-decoration: underline;
         color: #2d9cdb;
+        text-decoration: underline;
     }
 
     .footer__logo {
@@ -582,26 +579,68 @@ ul li a:hover {
     header {
         margin: 0;
         align-items: center;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        margin-bottom: 25px;
         height: 80px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        padding-top: 14px;
     }
 
     .nav {
-        flex-direction: row;
-        position: static;
-        height: fit-content;
-        width: 80%;
-        opacity: 1;
         padding: 0;
+        flex-direction: row;
+        height: fit-content;
         justify-content: flex-end;
+        opacity: 1;
+        position: static;
         transform: translateX(0);
+        width: 80%;
     }
 
     .nav li a {
         font-size: 18px;
         margin-left: 25px;
+    }
+
+    .hero__headline {
+        margin-bottom: 22px;
+    }
+
+    .hero__headline p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero img {
+        margin-bottom: 22px;
+    }
+
+    .services__card p {
+        max-width: 250px;
+    }
+
+    .team__headline {
+        margin-bottom: 22px;
+    }
+
+    .team__testimonial {
+        width: 90%;
+    }
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+
+    .footer__menu {
+        grid-column: 2 / span 2;
+    }
+
+    .footer__social {
+        grid-column: 5 / span 2;
+    }
+    .footer__wrapper form {
+        grid-column: 2 / span 5;
     }
 }
 
@@ -613,13 +652,13 @@ ul li a:hover {
         font-size: 36px;
     }
     .nav {
-        width: 60%;
         justify-content: space-between;
+        width: 60%;
     }
 
     .nav li a {
-        margin-left: 0;
         font-size: 20px;
+        margin-left: 0;
     }
 
     section:not(footer section) {
@@ -635,23 +674,23 @@ ul li a:hover {
     }
 
     .hero img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 32px;
         grid-column: 1 / span 12;
         grid-row: 5 / span 3;
+        height: auto;
+        margin-bottom: 32px;
+        width: 100%;
     }
 
     .hero__headline p {
-        margin-bottom: 16px;
         font-size: 18px;
+        margin-bottom: 16px;
     }
 
     .hero__headline h2 {
-        margin-bottom: 30px;
         font-size: 32px;
-        width: 360px;
         line-height: 50px;
+        margin-bottom: 30px;
+        width: 360px;
     }
 
     form {
@@ -677,14 +716,14 @@ ul li a:hover {
     }
 
     .hero__txt h3 {
-        max-width: 300px;
         font-size: 32px;
+        max-width: 300px;
     }
 
     .hero__txt p {
-        max-width: 350px;
         font-size: 16px;
         line-height: 30px;
+        max-width: 350px;
     }
 
     .services {
@@ -755,10 +794,10 @@ ul li a:hover {
     }
 
     .projects a {
+        font-size: 20px;
         grid-column: 4 / span 1;
         grid-row: 13 / span 1;
         text-align: end;
-        font-size: 20px;
     }
 
     .team {
@@ -782,9 +821,9 @@ ul li a:hover {
     .team__testimonial {
         margin: 0;
         padding: 0;
+        align-self: flex-start;
         grid-column: 2 / span 2;
         grid-row: 6 / span 2;
-        align-self: flex-start;
     }
 
     .team__testimonial q {
@@ -792,7 +831,6 @@ ul li a:hover {
     }
 
     .footer__wrapper {
-        display: grid;
         grid-template-columns: 5% repeat(9, 1fr) 5%;
         grid-template-rows: 46px 1fr 118px;
     }
@@ -826,8 +864,8 @@ ul li a:hover {
 @media screen and (min-width: 1200px) {
     header {
         height: 130px;
-        margin-top: 36px;
         margin-bottom: 40px;
+        margin-top: 36px;
     }
 
     .nav {
@@ -840,8 +878,8 @@ ul li a:hover {
 
     .hero__headline h2 {
         font-size: 40px;
-        width: 450px;
         line-height: 58px;
+        width: 450px;
     }
 
     .hero__txt {
@@ -868,8 +906,8 @@ ul li a:hover {
 
     .projects__headline h4 {
         font-size: 36px;
-        max-width: 450px;
         line-height: 54px;
+        max-width: 450px;
     }
 
     .projects__card--txt p {
