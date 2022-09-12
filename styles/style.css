@@ -77,7 +77,7 @@ form {
     display: flex;
     flex-direction: column;
     font-weight: 500;
-    margin: 10px auto;
+    margin: 10px 0;
 }
 
 form label {
@@ -583,6 +583,10 @@ ul li a:hover {
     header {
         margin: 0;
         align-items: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-bottom: 25px;
+        height: 80px;
     }
 
     .nav {
@@ -603,6 +607,9 @@ ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        margin-top: 16px;
+    }
     .logo a h1 {
         font-size: 36px;
     }
@@ -614,6 +621,112 @@ ul li a:hover {
     .nav li a {
         margin-left: 0;
         font-size: 20px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    .hero__headline {
+        grid-column: 3 / span 4;
+        grid-row: 3 / span 2;
+        max-width: max-content;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 42px;
+        grid-column: 1 / span 12;
+        grid-row: 5 / span 3;
+    }
+
+    .hero__headline p {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .hero__headline h2 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        width: 360px;
+        line-height: 50px;
+    }
+
+    form {
+        grid-column: 3 / span 4;
+        grid-row: 10 / span 1;
+    }
+
+    form label {
+        font-size: 12px;
+        line-height: 21px;
+        margin-bottom: 9px;
+    }
+
+    input,
+    form button {
+        font-size: 16px;
+    }
+
+    .hero__txt {
+        grid-column: 3 / span 4;
+        grid-row: 8 / span 2;
+        max-width: 330px;
+    }
+
+    .hero__txt h3 {
+        max-width: 300px;
+        font-size: 32px;
+    }
+
+    .hero__txt p {
+        max-width: 350px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .services {
+        grid-template-columns: 5% 1fr 34px 1fr 34px 1fr 5%;
+    }
+
+    .services__headline {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .services__headline h4 {
+        font-size: 32px;
+        line-height: 50px;
+        max-width: 300px;
+    }
+
+    .services__card.first {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .services__card.second {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .services__card.third {
+        grid-column: 6 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .projects {
+        border: 1px solid red;
+        grid-template-columns: 5% 1fr 34px 1fr 34px 1fr 5%;
+    }
+
+    .footer__txt {
+        align-items: center;
     }
 }
 
