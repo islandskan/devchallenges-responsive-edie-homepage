@@ -623,7 +623,7 @@ ul li a:hover {
         font-size: 20px;
     }
 
-    section {
+    section:not(footer section) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(auto, 1fr);
@@ -761,8 +761,65 @@ ul li a:hover {
         text-align: end;
     }
 
+    .team {
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-rows: repeat(4, 0.5fr) 100px 1fr;
+        margin-bottom: 100px;
+    }
+
+    .team__headline {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 2;
+    }
+
+    .team__container {
+        margin: 0;
+        padding: 0;
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 4;
+    }
+
+    .team__testimonial {
+        margin: 0;
+        padding: 0;
+        grid-column: 2 / span 2;
+        grid-row: 6 / span 2;
+        align-self: flex-start;
+    }
+
+    .team__testimonial q {
+        font-size: 30px;
+    }
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: 5% repeat(9, 1fr) 5%;
+        grid-template-rows: 46px 1fr 118px;
+    }
+
+    footer {
+        padding: 0 0 24px 0;
+    }
+
+    .footer__menu {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .footer__social {
+        grid-column: 5 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .footer__wrapper form {
+        grid-column: 8 / span 3;
+        grid-row: 2 / span 1;
+        height: fit-content;
+    }
+
     .footer__txt {
         align-items: center;
+        height: auto;
     }
 }
 
