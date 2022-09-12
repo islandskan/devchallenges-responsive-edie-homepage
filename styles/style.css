@@ -221,8 +221,23 @@ ul li a:hover {
         background-color: #333333;
         border-radius: 16px;
         height: 3px;
-        margin: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
         width: 30px;
+        transform-origin: 26.5px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .burger.open .line:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+
+    .burger.open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.open .line:nth-child(3) {
+        transform: rotate(45deg);
     }
 
     .nav li a {
