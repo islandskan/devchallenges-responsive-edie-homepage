@@ -13,3 +13,19 @@ burgerBtn.addEventListener('click', () => {
         link.classList.toggle('fade');
     });
 });
+
+function removeTransition(e) {
+    console.log(e);
+}
+
+// transitionend
+
+/*
+    navLink.forEach(link => link.addEventListener('transitionend'. removeTransition))
+
+    function removeTransition(e) {
+        if(e.propertyName !== 'transition') return;
+        console.log(e.propertyName);
+        this.classLisr.remove('playing')
+    }
+    */
