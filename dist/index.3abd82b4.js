@@ -1,0 +1,2 @@
+const burgerBtn=document.querySelector(".burger"),navEl=document.querySelector(".nav"),navLinks=document.querySelectorAll(".nav li");burgerBtn.addEventListener("click",(()=>{navEl.classList.toggle("open"),navEl.classList.contains("open")?burgerBtn.classList.add("fixed"):burgerBtn.classList.remove("fixed"),navLinks.forEach((e=>{e.classList.toggle("fade")}))}));
+//# sourceMappingURL=index.3abd82b4.js.map
