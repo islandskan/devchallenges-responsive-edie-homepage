@@ -1,4 +1,5 @@
 /* GLOBAL STYLES OUTSIDE BREAKPOINTS */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +30,7 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
 }
 
 /*
@@ -39,13 +40,24 @@ section {
 img {
     border-radius: 24px;
     max-width: 100%;
+    object-fit: cover;
 }
 
 input,
 button {
     border-radius: 12px;
     border: none;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease-in-out;
+}
+
+label,
+input,
+button {
+    cursor: pointer;
+    font-weight: 500;
 }
 
 input,
@@ -73,7 +85,6 @@ a:focus-visible {
 }
 
 button {
-    cursor: pointer;
     padding: 10px 13px;
     text-align: center;
 }
@@ -81,7 +92,6 @@ button {
 form {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
     margin: 10px 0;
     position: relative;
 }
@@ -90,17 +100,14 @@ form label {
     color: #828282;
     font-size: 10px;
     line-height: 1.6;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 input {
     background-color: #f2f2f2;
     color: #bdbdbd;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
     height: 50px;
-    line-height: 22px;
     padding: 15px 100px 6px 19px;
     width: 100%;
 }
@@ -120,12 +127,8 @@ form button {
     background-color: #2d9cdb;
     bottom: 4px;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
     height: 39px;
     letter-spacing: 0.9px;
-    line-height: 22px;
     position: absolute;
     right: 4px;
     width: 71px;
@@ -154,7 +157,7 @@ ul li a:hover {
 
     .headline {
         font-weight: 500;
-        margin-bottom: 15px;
+        margin: 0 0 15px 0;
         max-width: 275px;
         width: 100%;
     }
@@ -164,12 +167,8 @@ ul li a:hover {
         line-height: 36px;
     }
 
-    .headline__txt {
-    }
-
     .section__txt {
-        margin-bottom: 31px;
-        margin-top: 22px;
+        margin: 22px 0 31px 0;
         max-width: 270px;
         width: 100%;
     }
@@ -178,7 +177,7 @@ ul li a:hover {
         font-size: 24px;
         font-weight: 500;
         line-height: 36px;
-        margin-bottom: 33px;
+        margin: 0 0 33px 0;
         max-width: 227px;
     }
 
@@ -269,8 +268,7 @@ ul li a:hover {
         background-color: #333333;
         border-radius: 16px;
         height: 3px;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin: 5px 0;
         width: 30px;
         transform-origin: 26.5px;
         transition: transform 0.3s ease, opacity 0.3s ease;
@@ -296,10 +294,10 @@ ul li a:hover {
     /* HERO SECTION */
 
     .hero {
-        padding-bottom: 25px;
+        padding: 0 0 25px 0;
     }
 
-    .hero-headline .headline__txt {
+    .hero .headline__txt {
         color: #2d9cdb;
         font-size: 12px;
         line-height: 20px;
@@ -309,22 +307,21 @@ ul li a:hover {
         border-radius: 18px;
         height: 145px;
         max-width: 100%;
-        object-fit: cover;
     }
 
     /* SERVICES SECTION */
 
     .services {
-        padding-bottom: 40px;
+        padding: 0 0 40px 0;
     }
 
-    .service-headline.headline__title {
+    .service .headline__title {
         max-width: 227px;
     }
 
     .services__card {
         border-radius: 24px;
-        margin-bottom: 30px;
+        margin: 0 0 30px 0;
         max-width: 341px;
         padding: 49px 34px 30px 34px;
         transition: all 0.4s ease-in-out;
@@ -349,8 +346,7 @@ ul li a:hover {
         font-size: 24px;
         font-weight: 700;
         line-height: 36px;
-        margin-bottom: 24px;
-        margin-top: 35px;
+        margin: 35px 0 24px 0;
     }
 
     .services__card p {
@@ -358,16 +354,14 @@ ul li a:hover {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        margin-bottom: 30px;
+        margin: 0 0 30px 0;
         max-width: 273px;
     }
 
     .services__card button {
         background-color: #e0e0e0;
         color: #828282;
-        font-family: 'Poppins', sans-serif;
         font-size: 16px;
-        font-weight: 500;
         height: 42px;
         padding: 9px 12px;
         width: 120px;
@@ -406,7 +400,7 @@ ul li a:hover {
         color: #2d9cdb;
         font-size: 18px;
         font-weight: 500;
-        margin-top: 35px;
+        margin: 35px 0 0 0;
         transition: all 0.3s ease-in-out;
     }
 
@@ -416,10 +410,10 @@ ul li a:hover {
     }
 
     .projects a i {
-        margin-left: 12px;
+        margin: 0 0 0 12px;
     }
 
-    .projects-headline.headline__title {
+    .projects .headline__title {
         max-width: 267px;
     }
 
@@ -428,7 +422,7 @@ ul li a:hover {
     }
 
     .projects__card img {
-        margin-bottom: 10px;
+        margin: 0 0 10px 0;
     }
 
     .projects__card--txt p {
@@ -445,18 +439,18 @@ ul li a:hover {
 
     /* TEAM SECTION */
 
-    .team-headline {
+    .team .headline {
         align-self: flex-start;
         max-width: 280px;
     }
 
-    .team-headline.headline__title {
-        margin-bottom: 14px;
+    .team .headline__title {
+        margin: 0 0 14px 0;
     }
 
-    .team-headline.headline__txt {
+    .team .headline__txt {
         color: #4f4f4f;
-        margin-bottom: 36px;
+        margin: 0 0 36px 0;
         max-width: 273px;
     }
 
@@ -465,7 +459,7 @@ ul li a:hover {
         font-size: 18px;
         font-weight: 500;
         line-height: 1.8;
-        margin-bottom: 7px;
+        margin: 0 0 7px 0;
     }
 
     .team__container {
@@ -473,8 +467,8 @@ ul li a:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        margin-bottom: 50px;
-        padding-bottom: 50px;
+        margin: 0 0 50px 0;
+        padding: 0 0 50px 0;
         row-gap: 9px;
     }
 
@@ -506,10 +500,9 @@ ul li a:hover {
     }
 
     .team__testimonial--customer img {
-        margin-right: 30px;
+        margin: 0 30px 0 0;
         max-width: 82px;
         height: 82px;
-        object-fit: cover;
     }
 
     .testimonial-title .headline__txt {
@@ -544,7 +537,7 @@ ul li a:hover {
     }
 
     .footer__menu {
-        margin-bottom: 64px;
+        margin: 0 0 64px 0;
     }
 
     .footer__menu ul {
@@ -554,11 +547,11 @@ ul li a:hover {
     }
 
     .footer__logo {
-        margin-bottom: 8px;
+        margin: 0 0 8px 0;
     }
 
     .footer__social {
-        margin-bottom: 65px;
+        margin: 0 0 65px 0;
     }
 
     .footer__social--icons {
@@ -583,7 +576,7 @@ ul li a:hover {
         font-weight: 500;
         height: 152px;
         justify-content: flex-end;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     .footer__txt--link {
@@ -613,6 +606,7 @@ ul li a:hover {
     }
 
     .headline__txt {
+        margin: 0;
     }
 
     .section__txt {
@@ -631,12 +625,11 @@ ul li a:hover {
     }
 
     header {
-        margin: 0;
+        margin: 0; /* simply for reseting*/
         align-items: center;
         height: 80px;
         margin-bottom: 30px;
-        padding-bottom: 20px;
-        padding-top: 14px;
+        padding: 14 0 20px 0;
     }
 
     .nav {
@@ -656,30 +649,29 @@ ul li a:hover {
 
     .nav li a {
         font-size: 18px;
-        margin-left: 25px;
+        margin: 0 0 0 25px;
     }
 
     /* SECTIONS */
 
-    .hero__headline {
-        margin-bottom: 22px;
+    .hero .headline {
+        margin: 0 0 22px 0;
     }
 
-    /* .hero__headline p {
-        margin: 0;
-        margin-bottom: 10px;
-    } */
+    .hero .headline__txt {
+        margin: 0 0 10px 0;
+    }
 
     .hero img {
-        margin-bottom: 22px;
+        margin: 0 0 22px 0;
     }
 
     .services__card p {
         max-width: 250px;
     }
 
-    .team__headline {
-        margin-bottom: 22px;
+    .team .headline {
+        margin: 0 0 22px 0;
     }
 
     .team__testimonial {
@@ -723,7 +715,7 @@ ul li a:hover {
     form label {
         font-size: 12px;
         line-height: 21px;
-        margin-bottom: 9px;
+        margin: 0 0 9px 0;
     }
 
     input,
@@ -731,28 +723,32 @@ ul li a:hover {
         font-size: 16px;
     }
 
-    .headline {
-    }
-
     .headline__title {
+        font-size: 32px;
+        line-height: 50px;
+        margin: 0 0 30px 0;
     }
 
     .headline__txt {
-    }
-
-    .section__txt {
+        font-size: 18px;
+        margin: 0 0 16px 0;
     }
 
     .section__txt--title {
+        font-size: 32px;
+        max-width: 300px;
     }
 
     .section__txt--txt {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 350px;
     }
 
     /* HEADER AND NAVIGATION SECTION */
 
     header {
-        margin-top: 16px;
+        margin: 16px 0 0 0;
     }
     .logo a h1 {
         font-size: 36px;
@@ -764,12 +760,12 @@ ul li a:hover {
 
     .nav li a {
         font-size: 20px;
-        margin-left: 0;
+        margin-left: 0; /* simply for reseting*/
     }
 
     /* SECTIONS */
 
-    .hero__headline {
+    .hero .headline {
         grid-column: 3 / span 4;
         grid-row: 3 / span 2;
         max-width: max-content;
@@ -779,55 +775,29 @@ ul li a:hover {
         grid-column: 1 / span 12;
         grid-row: 5 / span 3;
         height: auto;
-        margin-bottom: 32px;
+        margin: 0 0 32px 0;
         width: 100%;
     }
 
-    /* .hero__headline p {
-        font-size: 18px;
-        margin-bottom: 16px;
-    } */
-
-    /* .hero__headline h2 {
-        font-size: 32px;
-        line-height: 50px;
-        margin-bottom: 30px;
+    .hero .headline__title {
         width: 360px;
-    } */
-
-    .hero__txt {
-        grid-column: 3 / span 4;
-        grid-row: 8 / span 2;
-        max-width: 330px;
     }
 
-    /* .hero__txt h3 {
-        font-size: 32px;
-        max-width: 300px;
-    } */
-
-    /* .hero__txt p {
-        font-size: 16px;
-        line-height: 30px;
-        max-width: 350px;
-    } */
+    .hero .section__txt {
+        grid-column: 3 / span 4;
+        grid-row: 8 / span 2;
+    }
 
     .services {
         grid-template-columns: 5% 1fr 34px 1fr 34px 1fr 5%;
     }
 
-    .services__headline {
+    .services .headline {
         grid-column: 2 / span 3;
         grid-row: 1 / span 1;
         height: auto;
         max-width: 100%;
     }
-
-    /* .services__headline h4 {
-        font-size: 32px;
-        line-height: 50px;
-        max-width: 300px;
-    } */
 
     .services__card.first {
         grid-column: 2 / span 1;
@@ -849,13 +819,13 @@ ul li a:hover {
         grid-template-rows: repeat(auto, 10%);
     }
 
-    .projects__headline {
+    .projects .headline {
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
     }
 
     .projects__card {
-        margin: 0;
+        margin: 0; /* simply for reseting*/
         height: 100%;
     }
 
@@ -889,42 +859,38 @@ ul li a:hover {
     .team {
         grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-rows: repeat(4, 0.5fr) 100px 1fr;
-        margin-bottom: 100px;
+        margin: 0 0 100px 0;
     }
 
-    .team__headline {
+    .team .headline {
         grid-column: 2 / span 1;
         grid-row: 2 / span 2;
     }
 
     .team__container {
-        margin: 0;
-        padding: 0;
+        margin: 0; /* simply for reseting*/
+        padding: 0; /* simply for reseting*/
         grid-column: 3 / span 1;
         grid-row: 1 / span 4;
     }
 
     .team__testimonial {
-        margin: 0;
-        padding: 0;
+        margin: 0; /* simply for reseting*/
+        padding: 0; /* simply for reseting*/
         align-self: flex-start;
         grid-column: 2 / span 2;
         grid-row: 6 / span 2;
-    }
-
-    /* .team__testimonial q {
-        font-size: 30px;
-    } */
-
-    .footer__wrapper {
-        grid-template-columns: 5% repeat(9, 1fr) 5%;
-        grid-template-rows: 46px 1fr 118px;
     }
 
     /* FOOTER */
 
     footer {
         padding: 0 0 24px 0;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: 5% repeat(9, 1fr) 5%;
+        grid-template-rows: 46px 1fr 118px;
     }
 
     .footer__menu {
@@ -952,10 +918,9 @@ ul li a:hover {
 @media screen and (min-width: 1200px) {
     /* GLOBALS */
 
-    .headline {
-    }
-
     .headline__title {
+        font-size: 36px;
+        line-height: 54px;
     }
 
     .headline__txt {
@@ -965,17 +930,24 @@ ul li a:hover {
     }
 
     .section__txt--title {
+        font-size: 40px;
+        line-height: 58px;
     }
 
     .section__txt--txt {
+        line-height: 28px;
+    }
+
+    .hero,
+    .services {
+        padding: 0 0 100px 0;
     }
 
     /* HEADER AND NAVIGATION SECTION */
 
     header {
         height: 130px;
-        margin-bottom: 40px;
-        margin-top: 36px;
+        margin: 36px 0 40px 0;
     }
 
     .nav {
@@ -984,43 +956,23 @@ ul li a:hover {
 
     /* SECTIONS */
 
-    .hero {
-        padding-bottom: 100px;
-    }
-
-    /* .hero__headline h2 {
+    .hero .headline__title {
         font-size: 40px;
         line-height: 58px;
         width: 450px;
-    } */
-
-    .hero__txt {
-        margin-bottom: 42px;
     }
 
-    /* .hero__txt h3 {
-        font-size: 40px;
-        line-height: 58px;
-    } */
-
-    /* .hero__txt p {
-        line-height: 28px;
-    } */
-
-    .services {
-        padding-bottom: 100px;
+    .hero .section__txt {
+        margin: 0 0 42px 0;
     }
 
-    /* .services__headline h4 {
-        font-size: 36px;
+    .services .headline__title {
         max-width: 400px;
-    } */
+    }
 
-    /* .projects__headline h4 {
-        font-size: 36px;
-        line-height: 54px;
+    .projects .headline__title {
         max-width: 450px;
-    } */
+    }
 
     .projects__card--txt p {
         font-size: 14px;
@@ -1037,10 +989,6 @@ ul li a:hover {
     .team__testimonial {
         max-width: 937px;
     }
-
-    /* .team__testimonial q {
-        font-size: 36px;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1059,6 +1007,8 @@ ul li a:hover {
     }
 
     .section__txt--title {
+        font-size: 48px;
+        line-height: 72px;
     }
 
     .section__txt--txt {
@@ -1076,19 +1026,17 @@ ul li a:hover {
 
     /* HEADER AND NAVIGATION SECTION */
 
-    /* .hero__headline h2 {
+    .hero .headline__title {
         font-size: 48px;
         line-height: 72px;
         width: 550px;
-    } */
+    }
 
     .hero__txt {
         max-width: 400px;
     }
 
-    /* .hero__txt h3 {
-        font-size: 48px;
-        line-height: 72px;
+    .hero .section__txt--title {
         max-width: 100%;
-    } */
+    }
 }
