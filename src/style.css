@@ -401,7 +401,7 @@ ul li a:hover {
         color: #2d9cdb;
         font-size: 18px;
         font-weight: 500;
-        margin: 35px 0 0 0;
+        margin: 10px 0 0 0;
         transition: all 0.3s ease-in-out;
     }
 
@@ -440,7 +440,7 @@ ul li a:hover {
 
     /* TEAM SECTION */
 
-    .team .headline:not(.team__testimonial) {
+    .team .headline:not(.team__testimonial.headline) {
         max-width: 280px;
     }
 
@@ -492,7 +492,6 @@ ul li a:hover {
         font-size: 24px;
         font-weight: 500;
         line-height: 1.7;
-        width: 351px;
     }
 
     .team__testimonial--customer {
@@ -508,6 +507,7 @@ ul li a:hover {
 
     .testimonial-title .headline__txt {
         color: #828282;
+        font-size: 16px;
     }
 
     /* FOOTER SECTION */
@@ -600,23 +600,12 @@ ul li a:hover {
 @media screen and (min-width: 768px) {
     /* GLOBALS */
 
-    .headline {
-    }
-
-    .headline__title {
-    }
-
     .headline__txt {
         margin: 0;
     }
 
-    .section__txt {
-    }
-
-    .section__txt--title {
-    }
-
-    .section__txt--txt {
+    section:not(footer section) {
+        margin: 0 0 50px 0;
     }
 
     /* HEADER AND NAVIGATION SECTION */
@@ -681,6 +670,10 @@ ul li a:hover {
         width: 90%;
     }
 
+    .testimonial-title .headline__txt {
+        font-size: 20px;
+    }
+
     /* FOOTER */
 
     .footer__wrapper {
@@ -708,6 +701,7 @@ ul li a:hover {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(auto, 1fr);
+        margin: 0 0 70px 0;
     }
 
     form {
@@ -864,10 +858,9 @@ ul li a:hover {
     .team {
         grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-rows: repeat(4, 0.5fr) 100px 1fr;
-        margin: 0 0 100px 0;
     }
 
-    .team .headline {
+    .team .headline:not(.team__testimonial.headline) {
         grid-column: 2 / span 1;
         grid-row: 2 / span 2;
     }
@@ -930,12 +923,6 @@ ul li a:hover {
         line-height: 54px;
     }
 
-    .headline__txt {
-    }
-
-    .section__txt {
-    }
-
     .section__txt--title {
         font-size: 40px;
         line-height: 58px;
@@ -947,7 +934,7 @@ ul li a:hover {
 
     .hero,
     .services {
-        padding: 0 0 100px 0;
+        padding: 0 0 50px 0;
     }
 
     /* HEADER AND NAVIGATION SECTION */
@@ -962,6 +949,10 @@ ul li a:hover {
     }
 
     /* SECTIONS */
+
+    .hero .headline__txt {
+        font-size: 14px;
+    }
 
     .hero .headline__title {
         font-size: 40px;
