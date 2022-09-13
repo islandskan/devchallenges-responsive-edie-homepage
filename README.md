@@ -38,14 +38,37 @@
 
 <!-- ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+<!-- Write an overview text here -->
+<!-- Going to clean up the css code -->
+
+ <!-- Things to fix:
+    -   When the '.burgerBtn' menu also has the classname '.open',
+        -   change the classname of the burgerBtn to '.fixed'
+        -   The '.fixed' classname has the following properties:
+            -   position: fixed;
+            -   top: 13px;
+            -   right: 6%;
+        -   In order to make the exit button visible even when you scroll down
+            the navigation menu(which is covering the screen)
+
+    -    When the mobile nav menu is open(covering the whole screen),
+        -   Change so user can't access anything else on the web site with the tab
+        -   While the nav menu is open, disable the tab of other links, inputs,
+        and buttons on the site.
+    -    Javascript has some sort of event method/attribute that controls
+          the ending of transitions and animations.
+          I recall it from the '30 days of JavaScript', the modal with the 'drumset'.
+
+    -    Minify the css, to make the file smaller.
+    Learned the basics of parcel to bundle and minify the html, js, and the css
+        -->
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 -   This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
--   Responsive mobile menu
+-   Responsive mobile navbar
 
 ## How To Use
 
@@ -78,3 +101,5 @@ $ npm start
 -   [Marked - a markdown parser](https://github.com/chjj/marked)
 -   [Mdn Web Docs - classList.toggle()](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 -   [Dev Ed - Animated Responsive Navbar Tutorial](https://www.youtube.com/watch?v=H4MkGzoACpQ)
+
+https://github.com/browserslist/browserslist#full-list

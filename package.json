@@ -1,0 +1,16 @@
+{
+    "name": "edie-homepage-master",
+    "version": "1.0.0",
+    "description": "Part of the Devchallenges Responsive Webdesign path",
+    "browserslist": "> 1%, last 4 versions, Firefox ESR, not dead",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^2.7.0"
+    }
+}
