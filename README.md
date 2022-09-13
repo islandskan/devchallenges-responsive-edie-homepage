@@ -12,9 +12,9 @@
       Demo
     </a> -->
     <span> | </span>
-    <!-- <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/islandskan/devchallenges-responsive-edie-homepage">
       Solution
-    </a> -->
+    </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
       Challenge
@@ -27,8 +27,12 @@
 ## Table of Contents
 
 -   [Overview](#overview)
+-   [Challenges](#challenges)
+-   [Solutions](#solutions)
+-   [Issues to solve](#issues-to-solve)
 -   [Features](#features)
 -   [How to use](#how-to-use)
+-   [Built with](#built-with)
 -   [Contact](#contact)
 -   [Acknowledgements](#acknowledgements)
 
@@ -36,39 +40,42 @@
 
 ## Overview
 
-<!-- ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
+![screenshot](mobile-preview.png)
+![screenshot](desktop-preview.png)
 
-<!-- Write an overview text here -->
-<!-- Going to clean up the css code -->
+My submission to project 7/8, as part of Devchallenge's learning path 'Responsive Web Developer'. The project features the homepage of a fictious web team Edie. The main challenge consisted of creating a static, responsive page with HTML and CSS based on the provided Figma design. Resources such as images and the favicon was provided in the starter files.
 
- <!-- Things to fix:
-    -   When the '.burgerBtn' menu also has the classname '.open',
-        -   change the classname of the burgerBtn to '.fixed'
-        -   The '.fixed' classname has the following properties:
-            -   position: fixed;
-            -   top: 13px;
-            -   right: 6%;
-        -   In order to make the exit button visible even when you scroll down
-            the navigation menu(which is covering the screen)
+The user stories:
 
-    -    When the mobile nav menu is open(covering the whole screen),
-        -   Change so user can't access anything else on the web site with the tab
-        -   While the nav menu is open, disable the tab of other links, inputs,
-        and buttons on the site.
-    -    Javascript has some sort of event method/attribute that controls
-          the ending of transitions and animations.
-          I recall it from the '30 days of JavaScript', the modal with the 'drumset'.
+-   I can see a page following the given design
+-   I can see a page on mobile following the given design
+-   I can go to certain locations by selecting links in navigation or footer
 
-    -    Minify the css, to make the file smaller.
-    Learned the basics of parcel to bundle and minify the html, js, and the css
-        -->
+Other than the user stories and the main challenge, I also challenged myself with: - Functional mobile navigation with JavaScript - Cleaning up the CSS code - Bundling and minifying the project using Parcel.js
+
+### Challenges
+
+-   Getting the autoprefixer plugin to work(since Parcel comes with PostCSS)
+-   Getting the layout for screen width 768px and greater to work
+-   Cleaning up the classnames to make the CSS selectors more reusable and more effective
+
+### Solutions
+
+-   When the mobile navbar is open, I wanted the burger button to be fixed(so that you can close the mobile navbar even when you have 'scrolled down'). I solved this by adding the classname '.fixed' to the burger button when the nav element had the '.open' classname present.
+-   Learned to use Parcel.js to bundle and minify the files
+
+### Issues to solve
+
+-   When the mobile navbar is open(and covering the whole screen), I want the user to only be able to focus on the items in the navbar. I want to implement this because even when the mobile navbar is covering up the screen, you can still tab the elements that are 'under' the mobile navbar(even though you can't see them).
+-   Even though the links in the mobile navbar is fading in just like I wanted, there's still a problem. If I close and open the mobile navbar too quickly, the last links hasn't finished their transition. This causes the animation to be yanky.
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
--   This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
--   Responsive mobile navbar
+-   Responsive web design, smallest screen width 320px, up to at least 1440px screen width.
+-   Responsive mobile menu
+-   Animated mobile burger menu
+-   When mobile menu is opened, the links are fading in from top to bottom
+-   Custom focus ring on interactive elements such as buttons, links, and input fields
 
 ## How To Use
 
@@ -78,7 +85,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/islandskan/devchallenges-responsive-edie-homepage
 
 # Install dependencies
 $ npm install
@@ -87,6 +94,10 @@ $ npm install
 $ npm start
 ```
 
+### Built with
+
+-   [Parcel](https://parceljs.org/)
+
 ## Contact
 
 -   GitHub [@islandskan](https://github.com/islandskan)
@@ -94,12 +105,9 @@ $ npm start
 
 ## Acknowledgements
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
-
 -   [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 -   [Node.js](https://nodejs.org/)
 -   [Marked - a markdown parser](https://github.com/chjj/marked)
 -   [Mdn Web Docs - classList.toggle()](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 -   [Dev Ed - Animated Responsive Navbar Tutorial](https://www.youtube.com/watch?v=H4MkGzoACpQ)
-
-https://github.com/browserslist/browserslist#full-list
+-   [Mdn Web Docs - Event, transitionend](https://developer.mozilla.org/en-US/docs/Web/API/Element/transitionend_event)
